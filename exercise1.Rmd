@@ -26,4 +26,16 @@ data_trans<-function(data){
 ```{r}
 data_trans(iris)
 ```
+## the second function
+```{r}
+data_trans2<-function(data){
+  data$new_column2<-data$Sepal.Length*data$Sepal.Width
+  return(data)
+}
+```
+
+## have a look of the second function
+```{r}
+data_trans2(iris)
+```
 
