@@ -1,0 +1,29 @@
+---
+title: "exercise1"
+author: 202413300
+output: html_document
+date: "2024-10-30"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## use the iris data
+```{r}
+data("iris")
+head(iris)
+```
+
+## a function that takes a dataset and performs some input transformation on it
+```{r}
+data_trans<-function(data){
+ data$new_column=data$Sepal.Length+data$Sepal.Width
+ return(data)
+}
+```
+
+## have a look of the transformed iris data
+```{r}
+data_trans(iris)
+```
+
