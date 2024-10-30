@@ -28,9 +28,9 @@ data_trans(iris)
 ```
 ## the second function
 ```{r}
-data_trans2<-function(data){
+data_trans2<-function(data_new){
   data$new_column2<-data$Sepal.Length*data$Sepal.Width
-  return(data)
+  return(data_new)
 }
 ```
 
